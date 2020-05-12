@@ -5,9 +5,6 @@
 * Application built with Vue CRUD is SPA (Single Page Application) so it works much faster than apps based on Wordpress, Joomla, etc.
 * Vue CRUD uses the vue along with its ecosystem (Vuex, Vuetify, etc). Enjoy the benefits of the most popular JS framework in the world.
 * The application architecture is adapted to work with REST API
-
-![Vue CRUD demo](https://user-images.githubusercontent.com/18534115/55162114-646f2e00-5167-11e9-8948-c4fc964daa28.gif)
-
 ## Functions
 Vue CRUD provides a set of utilities, from which you can compose your own application. Features included in the system can communicate with each other thanks to the use of the Vuex library. Vue CRUD includes the following elements:
 
