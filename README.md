@@ -71,16 +71,6 @@ The record creation / editing form supports the following types of fields:
 * **NEW!** Dynamic (user can select field type separately for each record),
 * **NEW!** Custom (with slots)
 
-## Support for mobile devices
-
-### App layout on desktop...
- <img
-  width="auto"
-  height="400"
-  src="https://user-images.githubusercontent.com/18534115/68077595-9fed6d00-fdc6-11e9-9e52-37dad9bb4bc1.png"
-  alt="app layout on desktop"
-/>
-
 ### ... and on mobile device
  <img
   width="auto"
