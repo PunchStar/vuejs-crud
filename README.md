@@ -1,17 +1,4 @@
 
-
-<p align="center">
-  <img width="300" height="auto" src="https://user-images.githubusercontent.com/18534115/49319435-29ccf000-f4fd-11e8-9fc6-8678864132bd.png">
-</p>
-<h1 align="center">Vue CRUD</h1>
-<div align="center">
-  <a><img alt="license" src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
-  <a><img alt="version" src="https://img.shields.io/badge/version-v0.15.2-yellow.svg"></a>
-  <a><img alt="build" src="https://travis-ci.org/what-crud/vue-crud.svg?branch=master"></a>
-  <a><img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
-  <a><img alt="Gitpod Ready-to-Code" src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod"></a>
-</div>
-
 <h4 align="center">Vue.js based REST-ful CRUD system.</h4>
 
 * Vue CRUD allows to create both a mechanism for managing a single table, as well as a CMS or extended CRM with a login system and modules
@@ -146,98 +133,9 @@ npm run load-template simple-crud
 
 5. Serve your app:
 ``` console
-yarn serve
-:: or
 npm run serve
 ```
 6. Your app is already running (probably at http://localhost:8080).
 
-### Usage
-
-The simplest possible code that supports CRUD operations for one table will look something like this:
-``` html
-<template>
-  <div>
-    <crud
-      :prefix="prefix"
-      :path="path"
-      :page-title="pageTitle"
-      :fields-info="fieldsInfo"
-      :details-title="$t('detailsTitle')"
-    >
-    </crud>
-    <alert-box></alert-box>
-  </div>
-</template>
-
-<script>
-  import Crud from '@/utils/crud/components/Crud.vue'
-  import AlertBox from "@/utils/app/components/AlertBox.vue";
-  export default {
-    data() {
-      return {
-        prefix: 'demo',
-        path: 'tasks',
-        pageTitle: 'demo.tasks',
-      }
-    },
-    computed: {
-      fieldsInfo() {
-        return [{
-            text: this.$t('fields.id'),
-            name: 'id',
-            details: false,
-          },
-          {
-            type: 'input',
-            column: 'name',
-            text: this.$t('fields.name'),
-            name: 'name',
-            multiedit: false
-          },
-          {
-            type: 'input',
-            column: 'description',
-            text: this.$t('fields.description'),
-            name: 'description',
-            required: false
-          },
-        ]
-      },
-    },
-    components: {
-      Crud,
-      AlertBox,
-    },
-    i18n: {
-      messages: {
-        en: {
-          detailsTitle: 'Task',
-          fields: {
-            id: 'Id',
-            name: 'Name',
-            description: 'Description'
-          }
-        }
-      }
-    },
-  }
-</script>
-```
-
 ## API
 The application requires a connection with the appropriate API. API can be created in any technology - the condition is its compliance with the Vue CRUD communication specification. If you need to create your API and do not know how to get started, and you don't mind PHP and Laravel, download or clone the <a href="https://github.com/oh-crud/laravel-crud-api" target="_blank">Laravel CRUD API</a> project.
-
-## Documentation
-To check out docs, visit :
-#### <a href="https://vue-crud.github.io/" target="_blank">vue-crud.github.io</a>.
-
-## Contributing
-If you have an idea about improving Vue CRUD, do not hesitate.
-
-Developers interested in contributing should read the [Code of Conduct](./CODE_OF_CONDUCT.md).
-
-## License
-[MIT](https://opensource.org/licenses/MIT)
-
-Copyright (c) 2018-present, Szczepan Masny
